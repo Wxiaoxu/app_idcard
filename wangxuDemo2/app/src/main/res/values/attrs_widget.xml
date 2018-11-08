@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="app_padding" format="dimension" />
+    <attr name="app_padding_left" format="dimension" />
+    <attr name="app_padding_right" format="dimension" />
+    <attr name="app_padding_top" format="dimension" />
+    <attr name="app_padding_bottom" format="dimension" />
+
+    <attr name="app_layout_orientation" format="enum">
+        <enum name="horizontal" value="0"></enum>
+        <enum name="vertical" value="1"></enum>
+    </attr>
+    <!--******************************************************************************************** -->
+    <!--倾斜45度显示的textview-->
+    <declare-styleable name="TriangleTextView">
+        <attr name="triangle_bg_color" format="color|reference"></attr>
+        <attr name="rate" format="float"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="DotImageView">
+        <attr name="app_is_show_dot" format="boolean"/>
+        <attr name="app_dot_radius" format="dimension"/>
+        <attr name="app_dot_color" format="color"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomViewPager">
+        <attr name="app_layout_orientation"></attr>
+        <attr name="app_is_slide_able" format="boolean"></attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="GroupSideAlignLayout">
+        <attr name="app_left_text" format="string" />
+        <attr name="app_left_text_size" format="dimension" />
+        <attr name="app_left_text_color" format="color" />
+        <attr name="app_left_max_width" format="dimension" />
+
+        <attr name="app_left_layout_gravity" format="enum">
+            <enum name="center_vertical" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+
+        <attr name="app_right_layout_gravity" format="enum">
+            <enum name="center_vertical" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="top" value="2" />
+        </attr>
+        <attr name="app_right_text" format="string" />
+        <attr name="app_right_text_size" format="dimension" />
+        <attr name="app_right_text_color" format="color" />
+        <attr name="app_right_max_width" format="dimension" />
+    </declare-styleable>
+
+
+    <!--自定义的RecyclerView-->
+    <declare-styleable name="CustomRecyclerView">
+        <attr name="app_span_count" format="integer"></attr>
+
+        <attr name="app_divide_line_style" format="enum">
+            <enum name="none" value="0"></enum>
+            <enum name="horizontal" value="1"></enum>
+            <enum name="vertical" value="2"></enum>
+        </attr>
+        <attr name="app_item_divide_line_color" format="color"/>
+
+        <attr name="app_layout_style" format="enum">
+            <enum name="horizontal" value="0"></enum>
+            <enum name="vertical" value="1"></enum>
+            <enum name="grid_vertical" value="2"></enum>
+            <enum name="grid_horizontal" value="3"></enum>
+            <enum name="other" value="9"></enum>
+        </attr>
+        <attr name="app_item_margin" format="dimension"/>
+        <attr name="app_last_item_bottom_margin" format="dimension"/>
+        <attr name="app_first_item_top_margin" format="dimension"/>
+
+    </declare-styleable>
+
+
+    <declare-styleable name="GroupTwoTextLayout">
+        <attr name="app_first_text" format="string|reference" />
+        <attr name="app_first_text_size" format="dimension" />
+        <attr name="app_first_text_color" format="color" />
+
+        <attr name="app_first_text_width" format="dimension" />
+        <attr name="app_first_text_height" format="dimension" />
+
+
+        <attr name="app_layout_orientation"></attr>
+
+        <attr name="app_is_linkage" format="boolean" />
+
+        <attr name="app_inner_margin_size" format="dimension" />
+
+        <attr name="app_second_text_width" format="dimension" />
+        <attr name="app_second_text_height" format="dimension" />
+
+        <attr name="app_second_text" format="string" />
+        <attr name="app_second_text_size" format="dimension" />
+        <attr name="app_second_text_color" format="color" />
+
+
+    </declare-styleable>
+
+
+    <!--GroupImageTextLayout的自定义相关属性-->
+    <declare-styleable name="GroupImageTextLayout">
+        <attr name="app_image_src" format="reference" />
+        <attr name="app_image_width" format="dimension" />
+        <attr name="app_image_height" format="dimension" />
+        <attr name="app_image_background" format="color|reference" />
+
+        <attr name="app_child_view_margin_start" format="dimension" />
+
+        <attr name="app_scale_type" format="enum">
+            <enum name="MATRIX" value="0" />
+            <enum name="FIT_XY" value="1" />
+            <enum name="FIT_START" value="2" />
+            <enum name="FIT_CENTER" value="3" />
+            <enum name="FIT_END" value="4" />
+            <enum name="CENTER" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="CENTER_INSIDE" value="7" />
+        </attr>
+
+        <attr name="app_text" format="string|reference" />
+        <attr name="app_text_color" format="color|reference" />
+        <attr name="app_text_size" format="dimension|reference" />
+        <attr name="app_text_background" format="color|reference" />
+        <attr name="app_text_margin_image_size" format="dimension|reference" />
+        <attr name="app_text_single_line" format="boolean"/>
+        <attr name="app_text_max_line" format="integer"/>
+        <attr name="app_text_max_width" format="dimension"/>
+
+        <attr name="app_text_gravity" format="enum">
+            <enum name="center_horizontal" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="center" value="3" />
+            <enum name="center_vertical" value="4" />
+        </attr>
+
+        <attr name="app_parent_orientation" format="enum">
+            <enum name="IMAGE_LEFT_TEXT_RIGHT" value="0" />
+            <enum name="IMAGE_TOP_TEXT_BOTTOM" value="1" />
+            <enum name="IMAGE_RIGHT_TEXT_LEFT" value="2" />
+            <enum name="IMAGE_BOTTOM_TEXT_TOP" value="3" />
+            <enum name="IMAGE_RIGHT_TEXT_LEFT_SIDE_ALIGN" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="BannerIndicatorView">
+        <attr name="app_cell_radius" format="dimension"></attr>
+        <attr name="app_cell_margin" format="dimension"></attr>
+        <attr name="app_cell_count" format="integer"></attr>
+        <attr name="app_current_position" format="integer"></attr>
+        <attr name="app_selected_color" format="color|reference"></attr>
+        <attr name="app_normal_color" format="color|reference"></attr>
+        <attr name="app_indicator_style" format="enum">
+            <enum name="CIRCLE" value="0"></enum>
+            <enum name="RECT" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EmptyLayoutManageView">
+        <attr name="app_empty_text_color" format="color" />
+        <attr name="app_empty_text" format="string" />
+        <attr name="app_empty_text_size" format="dimension" />
+        <attr name="app_empty_image_src" format="reference" />
+        <attr name="app_empty_image_width" format="dimension" />
+        <attr name="app_empty_image_height" format="dimension" />
+
+        <attr name="app_empty_text_gravity" format="enum">
+            <enum name="center_horizontal" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="center" value="3" />
+            <enum name="center_vertical" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+
+
+</resources>

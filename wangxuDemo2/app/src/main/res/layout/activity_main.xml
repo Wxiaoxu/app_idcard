@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.example.wx.myapplication.scoll.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--<com.example.wx.myapplication.GroupTextTwoLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--app:app_first_text="抢单重量"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--app:app_first_text_color="#999999"-->
+            <!--app:app_first_text_size="12sp"-->
+            <!--app:app_inner_margin_size="10dp"-->
+            <!--app:app_second_text="100吨"-->
+            <!--app:app_second_text_color="#999999"-->
+            <!--app:app_second_text_size="14sp"/>-->
+
+            <com.example.wx.myapplication.GroupSideAlignLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:app_left_text="找车要求"
+                app:app_left_text_color="@color/colorAccent"
+                app:app_left_text_size="14sp"
+                app:app_right_text="哈哈哈"
+                app:app_right_text_color="@color/colorAccent"
+                app:app_right_text_size="14sp" />
+
+            <com.example.wx.myapplication.GroupImageTextLayout
+                android:id="@+id/personal_authentication_id_card_front_Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:app_image_src="@mipmap/ic_launcher"
+                app:app_parent_orientation="IMAGE_TOP_TEXT_BOTTOM"
+                app:app_text="哈哈"
+                app:app_text_color="#999999"
+                app:app_text_margin_image_size="10dp"
+                app:app_text_size="12sp" />
+
+            <Button
+                android:id="@+id/bt_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击加载图片" />
+
+            <Button
+                android:id="@+id/bt_img_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击加载GIF图片" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <com.example.wx.myapplication.util.DotImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="3dp"
+                android:src="@mipmap/ic_launcher"
+                app:app_dot_color="#f00"
+                app:app_dot_radius="3dp"
+                app:app_is_show_dot="true" />
+
+            <Button
+                android:id="@+id/bt_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="跳转Recycle页面" />
+
+            <com.haozhang.lib.SlantedTextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:slantedBackgroundColor="@color/swipeoption_blue"
+                app:slantedLength="40dp"
+                app:slantedMode="right"
+                app:slantedText="哈哈哈"
+                app:slantedTextColor="@color/swipeoption_green"
+                app:slantedTextSize="14dp" />
+
+            <Button
+                android:id="@+id/bt_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="跳转Recycle页面" />
+
+            <Button
+                android:id="@+id/bt_notification"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="NotificationTestAvtivity" />
+
+            <Button
+                android:id="@+id/bt_danmu"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="DanMuActivity" />
+
+            <Button
+                android:id="@+id/bt_shoushi"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="DanMuActivity" />
+
+            <Button
+                android:id="@+id/bt_zhiwen"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="指纹解锁" />
+
+            <Button
+                android:id="@+id/bt_time"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="时间选择器" />
+        </LinearLayout>
+
+    </com.example.wx.myapplication.scoll.ElasticScrollView>
+
+</LinearLayout>

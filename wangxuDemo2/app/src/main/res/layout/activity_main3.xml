@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.wx.myapplication.view.UpAndDownSlidinglayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/up_sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/up_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#00ccff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="This is up menu"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ff00"
+        android:gravity="center"
+        android:paddingTop="50dp">
+
+        <ListView
+            android:id="@+id/contentList"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#e9e9e9"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none">
+
+        </ListView>
+    </LinearLayout>
+
+
+    <com.example.wx.myapplication.scoll.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.loopeer.cardstack.CardStackView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </com.example.wx.myapplication.scoll.ElasticScrollView>
+
+</com.example.wx.myapplication.view.UpAndDownSlidinglayout>
